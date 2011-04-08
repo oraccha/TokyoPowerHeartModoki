@@ -10,13 +10,15 @@
 
 #define REDLINE (95)	// percent
 #define YELLOWLINE (90)	// percent
-#define INTERVAL (3600.0f) // second
+#define CHECK_INTERVAL (3600.0f) // second
+#define RETRY_INTERVAL (300.0f) // second
 
 @interface AppController : NSObject {
+	bool isActive;
+
 	IBOutlet NSMenu *statusMenu;
-	
 	NSStatusItem *statusItem;
-	NSImage *greenImage, *yellowImage, *redImage;
+	NSImage *greenImage, *yellowImage, *redImage, *downImage;
 }
 
 @end
