@@ -3,3 +3,20 @@ Copyright (C) 2011 oraccha
 
 This program is strongly inspired by @qurihara's TokyoPowerHeart (http://sites.google.com/site/tokyopowerheart/).
 It uses TEPCO power usage REST API (http://tepco-usage-api.appspot.com/).
+
+
+HOW TO BUILD
+============
+- Get TokyoPowerHeartModoki code:
+
+  $ git clone git://github.com/oraccha/TokyoPowerHeartModoki.git
+
+- Get stig's JSON framework from https://github.com/stig/json-framework/downloads
+  and unzip it on the same directory like that:
+
+  $ ls
+  TokyoPowerHeartModoki  JSON v2.3.2 (Mac) ...
+
+- Open the project file and click "build & run":
+
+  $ open TokyoPowerHeartModoki/TokyoPowerHeartModoki.xcodeproj
