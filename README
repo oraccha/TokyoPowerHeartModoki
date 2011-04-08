@@ -2,7 +2,7 @@ TokyoPowerHeartModoki - Yet another TokyoPowerHeart for Mac OS X.
 Copyright (C) 2011 oraccha
 
 This program is strongly inspired by @qurihara's TokyoPowerHeart (http://sites.google.com/site/tokyopowerheart/).
-It uses TEPCO power usage REST API (http://tepco-usage-api.appspot.com/).
+It uses a TEPCO power usage REST API (http://tepco-usage-api.appspot.com/).
 
 
 HOW TO BUILD

@@ -47,7 +47,7 @@
 	}
 
 	// Set the status image
-	if (ratio == 0)
+	if (!isActive)
 		[statusItem setImage:downImage];
 	else if (ratio >= REDLINE)
 		[statusItem setImage:redImage];
@@ -57,12 +57,8 @@
 		[statusItem setImage:greenImage];
 	
 	// Set the tooltip
-	NSMutableString *tipText;
-	if (ratio == 0)
-		tipText = [NSMutableString stringWithFormat:@"東京電力稼働率：不明"];
-	else
-		tipText = [NSMutableString stringWithFormat:@"東京電力稼働率：%d%%", ratio];
-
+	NSMutableString *tipText = [NSMutableString stringWithFormat:@"東京電力稼働率：%@%%",
+								isActive ? [[NSNumber numberWithInt:ratio] stringValue] : @"不明"];
 	[statusItem setToolTip:tipText];
 	
 	// Set the menu items
